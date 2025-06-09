@@ -1,0 +1,7 @@
+/* Mobile-first */
+.nav ul { display: none; }
+/* ... hamburger menu styling ... */
+@media (min-width: 600px) {
+  nav ul { display: flex; }  /* Show full menu on larger screens */
+}
+.hero-video, .hero { width: 100%; height: auto; }
