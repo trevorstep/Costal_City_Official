@@ -13,39 +13,59 @@
     <!-- Responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Music</a></li>
-                <li><a href="#">Tour</a></li>
-                <li><a href="#">Store</a></li>
-            </ul>
-
-            <div class="logo">
-                <img src="your-logo.png" alt="Band Logo" />
+            <div class="nav-section nav-links">
+                <ul>
+                    <div class="home">
+                        <li><a href="#">Home</a></li>
+                    </div>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Tour</a></li>
+                    <li><a href="#">Store</a></li>
+                </ul>
             </div>
 
-            <div class="socials">
-                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-spotify"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+
+            <div class="nav-section socials">
+                <a href="https://www.instagram.com/coastalcityofficial/?hl=en" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@coastalcity_band?_t=ZP-8x6i631ujSp&_r=1" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://open.spotify.com/artist/79xJNRvTegKfE1eQy38FN6" target="_blank"><i
+                        class="fab fa-spotify"></i></a>
+                <a href="https://music.apple.com/us/artist/coastal-city/1647943751" target="_blank">
+                    <i class="fa-brands fa-apple"></i></a>
+                <a href="https://www.youtube.com/channel/UC0haDdl3SDGFr8STUsZ53Jw" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+
+
+
             </div>
         </nav>
 
 
 
-        <!-- Hero section -->
+
         <section class="hero">
             <video class="hero-video" src="video/Coastal backround.mp4" autoplay muted loop></video>
-            <h1>Coastal City</h1>
-            <p>New album out now</p>
-            <a href="store.html" class="btn">Shop Merch</a>
+            <div class="hero-overlay">
+                <div class="logo">
+                    <div class="logo-backround"></div>
+                    <img src="images/Coastal_Logo.png" alt="Band Logo" />
+                </div>
+
+                <p>New album out now</p>
+                <a href="store.html" class="btn">Shop Merch</a>
+            </div>
         </section>
+
 
         <main>
             <!-- Sections (will detail next) -->
@@ -55,6 +75,7 @@
             <p>&copy; 2025 Coastal City. All rights reserved.</p>
             <a href="privacy.html">Privacy Policy</a>
         </footer>
+        <script src="https://kit.fontawesome.com/f2ec5d2520.js" crossorigin="anonymous"></script>
         <script src="js/main.js"></script>
 </body>
 
