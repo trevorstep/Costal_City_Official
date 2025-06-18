@@ -41,27 +41,102 @@ main {
     z-index: 0;
 }
 
-.hero-overlay {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    top: 40%;
-    color: white;
+
+
+.hero-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    z-index: -1;
+    backdrop-filter: blur(5px);
 }
 
 .hero-overlay h1 {
     font-size: 3rem;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #e76f51;
+    text-align: left;
+    z-index: 1;
+    will-change: transform;
+    transition: transform 0.1s ease-out;
+}
+
+
+.overlay-left,
+.overlay-right {
+    flex: 1;
+    padding: 1rem;
+}
+
+.overlay-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-items: center;
+}
+
+.overlay-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-right img {
+    box-shadow: 10px 10px #e76f51;
+
 }
 
 .hero-overlay p {
-    font-size: 1.2rem;
-    margin: 1rem 0;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #e76f51;
 }
+
+.hero-overlay .btn {
+    margin-top: 0.5rem;
+}
+
+.hero-overlay img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.divider {
+    width: 2px;
+    height: 80%;
+    background-color: #264653;
+    margin: 0 1.5rem;
+}
+
 
 .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    background: #ff0055;
+    background: #2a9d8f;
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -70,7 +145,7 @@ main {
 }
 
 .btn:hover {
-    background: #e6004c;
+    background: #e76f51;
 }
 
 * {
@@ -80,7 +155,7 @@ main {
 }
 
 body {
-    background: #111;
+    background: #264653;
     color: white;
     font-family: 'Montserrat Alternates', sans-serif;
 }
@@ -89,28 +164,37 @@ header {
     width: 100%;
     position: sticky;
     top: 0;
-    background-color: #000;
+    background-color: #264653;
     z-index: 1000;
 }
 
 
 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
 }
 
 .logo img {
-    width: 100px;
+    width: 200px;
     height: auto;
 }
 
-.logo-backround {
+
+.logo-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-color: #000;
-    border-radius: 35%;
-    opacity: 80%;
+    border-radius: 25%;
+    opacity: 0.7;
+    z-index: -1;
 }
+
 
 .navbar {
     display: grid;
@@ -137,6 +221,7 @@ header {
 
 .home {
     text-decoration: underline;
+    color: #e76f51;
 }
 
 .nav-links a {
@@ -146,12 +231,14 @@ header {
     font-weight: 500;
     transition: color 0.3s ease;
     font-family: 'Montserrat Alternates', sans-serif;
-
-
 }
 
 .nav-links a:hover {
-    color: #ff0055;
+    color: #e76f51;
+}
+
+.socials a:hover {
+    color: #e76f51;
 }
 
 .socials {
@@ -166,6 +253,38 @@ header {
     transition: color 0.3s ease;
 }
 
-.socials a:hover {
-    color: #1db954;
+p {
+    color: #e76f51;
+}
+
+
+.Section1 {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to top, #e76f51, #f4a261, #e9c46a, #2a9d8f, #264653);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+}
+
+footer {
+    background-color: #1e1e1e;
+    padding: 2rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0.9rem;
+    border-top: 2px solid #e76f51;
+    margin-top: 4rem;
+}
+
+footer a {
+    color: #2a9d8f;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+footer a:hover {
+    color: #e76f51;
 }
