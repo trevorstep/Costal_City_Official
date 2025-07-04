@@ -3,17 +3,13 @@
     display: none;
 }
 
-/* ... hamburger menu styling ... */
 @media (min-width: 600px) {
     nav ul {
         display: flex;
     }
-
-    /* Show full menu on larger screens */
 }
 
-.hero-video,
-.hero {
+.hero-video {
     width: 100%;
     height: auto;
 }
@@ -259,15 +255,22 @@ p {
 
 
 .Section1 {
+    margin: auto;
+    margin-top: 1%;
     height: 100vh;
-    width: 100%;
+    width: 50%;
     background: linear-gradient(to top, #e76f51, #f4a261, #e9c46a, #2a9d8f, #264653);
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     font-size: 2rem;
+    border-radius: 100%;
+    border: 3px #264653;
 }
+
+
+
 
 footer {
     background-color: #1e1e1e;
