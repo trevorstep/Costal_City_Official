@@ -335,8 +335,6 @@ p {
     pointer-events: none; 
 }
 
-
-
 @keyframes sunsetLoop {
     0% {
         background-position: 0% 0%;
@@ -351,6 +349,72 @@ p {
     }
 }
 
+.Section2{
+height: 500px;
+width: 100%;
+}
+
+.email-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.2rem 1rem;
+  background-color: #264653;
+  color: white;
+  text-align: center;
+}
+
+.email-form {
+  max-width: 500px;
+  width: 100%;
+}
+
+.email-label {
+  display: block;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.email-input-group {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+.email-input {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  width: 100%;
+}
+
+.email-input::placeholder {
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.email-button {
+  padding: 0.75rem 1rem;
+  background: white;
+  color: black;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.email-button:hover {
+  background: #ccc;
+}
 
 
 
